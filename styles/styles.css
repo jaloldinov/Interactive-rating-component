@@ -31,6 +31,7 @@ body {
 .container .card {
   background-color: rgba(37, 45, 55, 0.6);
   width: 88%;
+  max-width: 41rem;
   border-radius: 1.5rem;
   padding: 2.5rem;
 }
@@ -106,8 +107,8 @@ body {
 }
 
 .container .card .rating-wrapper .rating-button div {
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  -webkit-transform: translateY(12%);
+          transform: translateY(12%);
 }
 
 .container .card .rating-wrapper .rating-button:hover {
@@ -119,11 +120,11 @@ body {
   color: white;
 }
 
-.container .card .rating-wrapper .active {
+.container .card .rating-wrapper .selected {
   background-color: #959eac;
 }
 
-.container .card .rating-wrapper .active div {
+.container .card .rating-wrapper .selected div {
   color: white;
 }
 
@@ -157,6 +158,8 @@ body {
   color: white;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
+  -webkit-transform: translateY(12%);
+          transform: translateY(12%);
 }
 
 .container .card .submit-button:hover {
@@ -207,5 +210,40 @@ body {
 
 .container .card .hide {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    padding: 3rem;
+    border-radius: 3rem;
+  }
+  .container .card .star {
+    width: 5rem;
+    height: 5rem;
+  }
+  .container .card .star img {
+    width: 1.7rem;
+  }
+  .container .card .title {
+    margin-top: 3.4rem;
+    font-size: 2.78rem;
+  }
+  .container .card .text {
+    margin-top: 0.9rem;
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+  }
+  .container .card .rating-wrapper .rating-button {
+    width: 5.1rem;
+    height: 5.1rem;
+    font-size: 1.6rem;
+  }
+  .container .card .rating-wrapper .rating-button div {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  .container .card .submit-button {
+    margin-top: 3.2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
